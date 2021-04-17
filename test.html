@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        ul {
+            margin-left: 0px;
+            border-style: hidden;
+            width: 50%;
+            display: inline;
+        }
+        ul.daohang li{
+            display:inline-block;
+            list-style-type: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 90%;
+            border: hidden;
+            margin-top: 15px;
+            padding-right: 15px; /*列表元素的间隔*/
+        }
+        ul.daohang a{
+            text-decoration: none;
+            color:black;
+        }
+        a.highlight:hover {
+            color: blue;
+        }
+        div.webHead {
+            color: rgb(255, 0, 0);
+            text-align: center;
+            font-family: fantasy;
+            margin: 100px;
+            border: 200px hidden;
+            padding: 10px;
+            font-size: 250%;
+        }
+        div.webHead a{
+            text-decoration: none;
+            color: red;
+        }
+        input.shuru {
+            height: 45px;
+            margin: auto;
+            width: 60%;
+            border: 2px solid rgb(185, 184, 184);
+            border-radius: 10px 0px 0px 10px;
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+        }
+        input.shuru:focus{
+            border: 2px solid blue;
+        }
+        input.tijiao {
+            border-radius: 0px 10px 10px 0px; 
+            background-color: blue; 
+            color: white;
+            margin: auto;
+            width: 14%;
+            border: hidden;
+            text-align: center;
+            font-size: 17px;
+            height: 45px;
+            vertical-align: middle;
+        }
+        .dropbtn {
+        background-color: white;
+        padding: 10px;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        margin-right: 50px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            overflow: auto;
+            width: 100%;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color:white;
+        }
+</style>
+
+<body>
+
+<title>Baidu</title>
+<body>
+    <ul class="daohang">
+        <li><a class="highlight" href="http://news.baidu.com/">新闻</a></li>
+        <li><a class="highlight" href="https://www.hao123.com/">hao123</a></li>
+        <li><a class="highlight" href="https://map.baidu.com/">地图</a></li>
+        <li><a class="highlight" href="https://live.baidu.com/">直播</a></li>
+        <li><a class="highlight" href="https://haokan.baidu.com/?sfrom=baidu-top">视频</a></li>
+        <li><a class="highlight" href="http://tieba.baidu.com">贴吧</a></li>
+        <li><a class="highlight" href="https://xueshu.baidu.com/">学术</a></li>
+        <li><a class="highlight">更多</a></li>
+    </ul>
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn">设置</button>
+        <div class="dropdown-content">
+          <a href="#">搜索设置</a>
+          <a href="#">高级搜索</a>
+          <a href="#">关闭预测</a>
+          <a href="#">隐私设置</a>
+          <a href="#">关闭热榜</a>
+        </div>
+      </div>
+    <div class="webHead">
+        <a href="http://www.baidu.com/"><b>BaiDu百度</b></a><br>
+        <form>
+            <input type="search" class="shuru"><input type="submit" value="百度一下"  class="tijiao">
+    </div>
+</body>
+</html>
